@@ -1,3 +1,76 @@
-* {
+:root {
     font-family: Helvetica;
+    font-size: 24px;
+
+}
+
+.header-section {
+    display: flex;
+    margin: 0 64px;
+}
+
+.header-section>* {
+    width: 50%;
+    padding: 64px;
+    font-weight: 400;
+
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 400;
+
+}
+
+.header-details>*:not(:first-child) {
+    margin-top: 0;
+}
+
+.header-details>* {
+    margin-bottom: 0;
+}
+
+.header-links>ul {
+    list-style: none;
+    padding: 0;
+}
+
+main {
+    width: 50%;
+    margin: 0 64px;
+}
+
+main> * {
+    padding: 32px 64px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+summary {
+    list-style: none;
+    /* Removes the default marker for most browsers */
+}
+
+summary::-webkit-details-marker {
+    display: none;
+    /* Removes the default marker for Webkit/Chromium browsers */
+}
+
+details.future {
+    color: gray;
+}
+
+details.future > summary {
+    cursor: default;
+
+}
+
+
+
+.unit-title {
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    /* font-weight: 600; */
 }
