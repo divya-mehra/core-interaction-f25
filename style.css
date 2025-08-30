@@ -40,12 +40,14 @@ main {
     margin: 0 64px;
 }
 
-main> * {
+main>* {
     padding: 32px 64px;
 }
 
 summary {
     cursor: pointer;
+    padding-bottom: 12px;
+
 }
 
 summary {
@@ -62,15 +64,34 @@ details.future {
     color: gray;
 }
 
-details.future > summary {
+details.future>summary {
     cursor: default;
-
 }
-
-
 
 .unit-title {
     text-transform: uppercase;
     padding-bottom: 12px;
     /* font-weight: 600; */
+}
+
+
+
+ol {
+    list-style: none;
+    margin-top: 0px;
+}
+
+.in-class>li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.in-class>li>*:nth-child(2) {
+    /* text-transform: uppercase; */
+    /* font-size: 12px; */
+    /* font-weight: 600; */
+    outline: 1px;
+    margin: 0;
+    padding: 0;
+    border-radius: 5%;
 }
