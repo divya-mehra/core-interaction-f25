@@ -1,7 +1,11 @@
 :root {
     font-family: Helvetica;
     font-size: 24px;
+    background-color: rgb(243, 251, 245);
+}
 
+hr {
+    border-color: rgb(29, 75, 2)
 }
 
 .header-section {
@@ -19,7 +23,6 @@
 .title {
     font-size: 64px;
     font-weight: 400;
-
 }
 
 .header-details>*:not(:first-child) {
@@ -35,9 +38,15 @@
     padding: 0;
 }
 
-main {
+.main-content {
+    display: flex;
+}
+
+
+main, aside{
     width: 50%;
     margin: 0 64px;
+    position: relative;
 }
 
 main>* {
@@ -69,9 +78,15 @@ details.future>summary {
 }
 
 .unit-title {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-size: 36px;
     padding-bottom: 12px;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     /* font-weight: 600; */
+}
+
+.week {
+    /* text-transform: uppercase ; */
 }
 
 
@@ -94,4 +109,15 @@ ol {
     margin: 0;
     padding: 0;
     border-radius: 5%;
+}
+
+/* Animation */
+
+.animated-rect {
+    /* position: fixed; */
+    /* transform: translate(50%, -25%); */
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    border-radius: 50%;
 }
