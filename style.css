@@ -89,7 +89,9 @@ details.future>summary {
     /* text-transform: uppercase ; */
 }
 
-
+a {
+    color: black;
+}
 
 ol {
     list-style: none;
