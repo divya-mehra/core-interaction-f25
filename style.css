@@ -1,7 +1,29 @@
+@font-face {
+    font-family: 'Favorit';
+    src: url('/fonts/ABCFavorit-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('/fonts/ABCFavorit-Bold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('/fonts/ABCFavorit-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 :root {
-    font-family: Helvetica;
+    font-family: Favorit;
     font-size: 24px;
-    background-color: rgb(243, 251, 245);
+    background-color: rgb(255, 255, 255);
+    letter-spacing: -0.01em;
 }
 
 hr {
@@ -21,7 +43,8 @@ hr {
 }
 
 .title {
-    font-size: 64px;
+    font-size: 72px;
+    letter-spacing: -4px;
     font-weight: 400;
 }
 
@@ -43,7 +66,8 @@ hr {
 }
 
 
-main, aside{
+main,
+aside {
     width: 50%;
     margin: 0 64px;
     position: relative;
@@ -51,12 +75,18 @@ main, aside{
 
 main>* {
     padding: 32px 64px;
+
+}
+
+.unit-title {
+    letter-spacing: -1px;
+    font-weight: 500;
 }
 
 summary {
     cursor: pointer;
     padding-bottom: 12px;
-
+    font-weight: 400;
 }
 
 summary {
@@ -91,6 +121,10 @@ details.future>summary {
 
 a {
     color: black;
+}
+
+a:hover {
+    color: red;
 }
 
 ol {
