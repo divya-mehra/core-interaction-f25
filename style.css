@@ -32,6 +32,7 @@ hr {
 
 .header-section {
     display: flex;
+    flex-direction: row;
     margin: 0 64px;
 }
 
@@ -115,10 +116,6 @@ details.future>summary {
     /* font-weight: 600; */
 }
 
-.week {
-    /* text-transform: uppercase ; */
-}
-
 a {
     color: black;
 }
@@ -157,4 +154,32 @@ ol {
     width: 300px;
     background-color: green;
     border-radius: 50%;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 16px;
+    }
+
+    .header-section {
+        flex-direction: column;
+        margin: 0 32px;
+    }
+
+    .header-section>* {
+        width: 100%;
+        padding: 32px 0;
+    }
+
+    main,
+    aside {
+        width: 100%;
+        margin: 0 32px;
+    }
+
+    main > * {
+        padding: 32px 0;
+    }
 }
