@@ -56,6 +56,7 @@ body {
 }
 
 
+
 .title {
     font-family: 'Diatype', sans-serif;
     font-size: var(--font-size-title);
@@ -82,11 +83,11 @@ body {
 }
 
 
-main 
-{
+main {
     width: 50%;
     position: relative;
 }
+
 aside {
     width: 50%;
     position: relative;
@@ -116,14 +117,14 @@ summary::-webkit-details-marker {
 }
 
 details summary::after {
-  content: "↓"; 
-  margin-right: 5px;
-  transition: transform 0.2s;
+    content: "↓";
+    margin-right: 5px;
+    transition: transform 0.2s;
 }
 
 details[open] summary::after {
-  content: "↑"; 
-  /* transform: rotate(180deg); */
+    content: "↑";
+    /* transform: rotate(180deg); */
 }
 
 details.future {
